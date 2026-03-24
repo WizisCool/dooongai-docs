@@ -1,0 +1,20 @@
+:root {
+  --ifm-color-primary: #1f6feb;
+  --ifm-color-primary-dark: #1a63d4;
+  --ifm-color-primary-darker: #175fc9;
+  --ifm-color-primary-darkest: #134ea5;
+  --ifm-color-primary-light: #3a7ef0;
+  --ifm-color-primary-lighter: #4b89f2;
+  --ifm-color-primary-lightest: #6a9cf4;
+  --ifm-font-family-base: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --ifm-heading-font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --ifm-code-font-size: 95%;
+}
+
+html[data-theme="dark"] {
+  --ifm-color-primary: #7ab7ff;
+}
+
+.hero--primary {
+  background: linear-gradient(120deg, #0f2f66 0%, #1f6feb 50%, #3fa5ff 100%);
+}
