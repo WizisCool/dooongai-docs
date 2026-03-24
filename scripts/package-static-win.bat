@@ -13,7 +13,7 @@ echo [1/4] Installing dependencies...
 call npm install || goto :error
 
 echo [2/4] Building local static site...
-call npm run build:local || goto :error
+call npm run build || goto :error
 
 if not exist "%RELEASE_DIR%" mkdir "%RELEASE_DIR%"
 

@@ -9,12 +9,12 @@ title: 流式输出（Streaming）
 ## curl 示例
 
 ```bash
-curl https://api.ai.dooo.ng/v1/chat/completions \
+curl https://ai.dooo.ng/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AI_DOOO_NG_API_KEY}" \
+  -H "Authorization: Bearer ${dooong_api_key}" \
   -N \
   -d '{
-    "model": "gpt-4o-mini",
+    "model": "gpt-5.2",
     "stream": true,
     "messages": [
       {"role": "user", "content": "请分三段解释什么是 API 网关"}
@@ -28,12 +28,12 @@ curl https://api.ai.dooo.ng/v1/chat/completions \
 import OpenAI from "openai";
 
 const client = new OpenAI({
-  apiKey: process.env.AI_DOOO_NG_API_KEY,
-  baseURL: "https://api.ai.dooo.ng/v1"
+  apiKey: process.env.dooong_api_key,
+  baseURL: "https://ai.dooo.ng/v1"
 });
 
 const stream = await client.chat.completions.create({
-  model: "gpt-4o-mini",
+  model: "gpt-5.2",
   stream: true,
   messages: [{ role: "user", content: "输出一个简短发布公告" }]
 });

@@ -25,18 +25,17 @@ title: 快速开始
 建议使用环境变量：
 
 ```bash
-export AI_DOOO_NG_BASE_URL="https://api.ai.dooo.ng/v1"
-export AI_DOOO_NG_API_KEY="<YOUR_API_KEY>"
+export dooong_api_key="<YOUR_API_KEY>"
 ```
 
 ## 4. 发送首个请求
 
 ```bash
-curl https://api.ai.dooo.ng/v1/chat/completions \
+curl https://ai.dooo.ng/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AI_DOOO_NG_API_KEY}" \
+  -H "Authorization: Bearer ${dooong_api_key}" \
   -d '{
-    "model": "gpt-4o-mini",
+    "model": "gpt-5.2",
     "messages": [
       {"role": "user", "content": "hello"}
     ]

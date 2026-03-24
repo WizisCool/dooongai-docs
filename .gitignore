@@ -28,3 +28,7 @@ release/
 .env
 .env.*
 !.env.example
+
+# Local deploy scripts (never commit)
+scripts/*.local.ps1
+scripts/*.local.bat

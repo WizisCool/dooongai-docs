@@ -10,7 +10,7 @@ echo "[1/4] Installing dependencies..."
 npm install
 
 echo "[2/4] Building local static site..."
-npm run build:local
+npm run build
 
 mkdir -p "$RELEASE_DIR"
 

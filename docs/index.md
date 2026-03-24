@@ -28,5 +28,7 @@ DooongAI 是公益性质的一站式 AI 模型 API 中转服务，提供 OpenAI 
 
 默认使用 OpenAI 兼容协议。若你已接入 OpenAI SDK，通常只需替换：
 
-- `baseURL` -> `https://api.ai.dooo.ng/v1`
+- `baseURL` -> `https://ai.dooo.ng/v1`
 - `apiKey` -> 你的 DooongAI API Key
+
+

@@ -1,14 +1,12 @@
 // @ts-check
 
-const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
-
 const config = {
   title: "DooongAI 文档",
   tagline: "公益性质的一站式 AI 模型 API 中转服务",
   favicon: "img/logo.png",
 
-  url: isGitHubPages ? "https://wiziscool.github.io" : "https://ai.dooo.ng",
-  baseUrl: isGitHubPages ? "/dooongai-docs/" : "/",
+  url: "https://ai.dooo.ng",
+  baseUrl: "/docs/",
 
   organizationName: "ai-dooo-ng",
   projectName: "dooongai-docs",
@@ -76,11 +74,11 @@ const config = {
           items: [
             {
               label: "快速开始",
-              to: "/getting-started"
+              to: "/guides/getting-started"
             },
             {
               label: "API 鉴权",
-              to: "/api-auth"
+              to: "/guides/api-auth"
             }
           ]
         },

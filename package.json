@@ -6,8 +6,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
-    "clear": "docusaurus clear",
-    "build:local": "cross-env GITHUB_ACTIONS=false docusaurus build"
+    "clear": "docusaurus clear"
   },
   "dependencies": {
     "@docusaurus/core": "^3.9.1",
@@ -15,8 +14,7 @@
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "cross-env": "^7.0.3"
+    "react-dom": "^18.3.1"
   },
   "engines": {
     "node": ">=20"

@@ -11,7 +11,7 @@ title: Base URL 与模型
 请在控制台或平台公告中确认最新地址。常见形式如下：
 
 ```txt
-https://api.ai.dooo.ng/v1
+https://ai.dooo.ng/v1
 ```
 
 > 若客户端需要分开配置 Host 与路径，请确保最终请求落在 `/v1/*` 路由上。
@@ -20,9 +20,7 @@ https://api.ai.dooo.ng/v1
 
 模型名以平台控制台展示为准。示例：
 
-- `gpt-4o-mini`
-- `gpt-4.1`
-- `codex-*`（如平台提供）
+- `gpt-5.2`
 
 ### 选型建议
 
@@ -36,12 +34,12 @@ https://api.ai.dooo.ng/v1
 import OpenAI from "openai";
 
 const client = new OpenAI({
-  apiKey: process.env.AI_DOOO_NG_API_KEY,
-  baseURL: "https://api.ai.dooo.ng/v1"
+  apiKey: process.env.dooong_api_key,
+  baseURL: "https://ai.dooo.ng/v1"
 });
 
 const resp = await client.chat.completions.create({
-  model: "gpt-4o-mini",
+  model: "gpt-5.2",
   messages: [{ role: "user", content: "Write a short hello world" }]
 });
 
