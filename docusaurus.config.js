@@ -45,6 +45,9 @@ const config = {
 
   themeConfig: {
     image: "img/social-card.svg",
+    colorMode: {
+      respectPrefersColorScheme: true
+    },
     navbar: {
       logo: {
         alt: "DooongAI Logo",
