@@ -27,6 +27,35 @@ npm run build
 
 构建产物目录：`build/`
 
+## 本地部署版本
+
+### 方式一：Node 直接部署（推荐开发测试）
+
+```bash
+npm install
+npm run build:local
+npm run serve
+```
+
+默认访问：`http://localhost:3000`
+
+### 方式二：静态产物一键打包
+
+Windows（生成 zip）：
+
+```bat
+scripts\\package-static-win.bat
+```
+
+Linux（生成 tar.gz）：
+
+```bash
+chmod +x scripts/package-static-linux.sh
+./scripts/package-static-linux.sh
+```
+
+产物输出目录：`release/`
+
 ## 目录说明
 
 - `docs/` 文档正文（接入指南、工具教程、FAQ）
